@@ -32,7 +32,7 @@ The button is a digital sensor, this means that returns a value of 0 whenever it
 ### sonar
 
 This type of sensor was vital to the succesful operation of the button this is because the buttons return value of 1 would not register if the robot hit the wall at full speed.
-![picture](/img/sonar.pgn)
+![picture](/img/sonar.png)
 
 
 ## Code <a id="code"></a>
