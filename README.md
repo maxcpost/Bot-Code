@@ -1,12 +1,12 @@
 # Bot-Code
 
 This is the Code running my VEX robot for the PLTW corse P.O.E. The robot has been named Rina.
-
+![picture](/img/Rina.png)
 
 ## Built With
 
 * [ROBOTC](http://www.robotc.net/download/vexrobotics/) - Compile and Deploy the Code
-* [Atom](https://code.visualstudio.com) - Code the Robot (programmed in C)
+* [Atom](https://atom.io/) - Code the Robot (programmed in C)
 * [VEX](https://www.vexrobotics.com/) - Hardware Used
 
 
@@ -18,6 +18,18 @@ This is the Code running my VEX robot for the PLTW corse P.O.E. The robot has be
 
 
 ## Mechanical <a id="Mech"></a>
+
+We decided to change a few of the mechanical aspecects from what the PLTW diagram described. Our changes where done in order to achive faster speeds.
+
+### Gears
+
+We increased the gear ratio tremendously in order to achive faster speeds. When tested against other robots both running their motors at 100, our robot traveled twice as fast. This is helpful in our quest for being the fastest however we ran into a few other problems that were solved with [motion profiling](#motionpfile).
+![picture](/img/gears.png)
+
+### Wheels
+
+Our wheels are four inches in diameter which is much larger than what was suggested in the diagram, however, it is needed because of the larger gears.
+![picture](/img/wheels.png)
 
 
 ## Sensors <a id="Sensors"></a>
@@ -38,7 +50,6 @@ This type of sensor was vital to the succesful operation of the button this is b
 ## Code <a id="code"></a>
 
 These are the different aspects found in the code that runs the robot.
-
 
 ### Motion Profiling-ish <a id="motionpfile"></a>
 
