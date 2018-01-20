@@ -19,7 +19,7 @@ This is the Code running my VEX robot for the PLTW corse P.O.E. The robot has be
 
 ## Mechanical <a id="Mech"></a>
 
-## Sensors <a id="Sensors"></a
+## Sensors <a id="Sensors"></a>
 
 We used three different sensors on the robot including button, sonar, and line fallower. Each time we wanted the robot to make a turn we used sonar to slow the robot down and then the when the robot hits the wall it will make the desired turn.
 
