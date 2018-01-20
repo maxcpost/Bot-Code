@@ -19,9 +19,20 @@ This is the Code running my VEX robot for the PLTW corse P.O.E. The robot has be
 
 ## Mechanical <a id="Mech"></a>
 
+
 ## Sensors <a id="Sensors"></a>
 
-We used three different sensors on the robot including button, sonar, and line fallower. Each time we wanted the robot to make a turn we used sonar to slow the robot down and then the when the robot hits the wall it will make the desired turn.
+We used three different sensors on the robot including [button](#button), [sonar](#sonar), and line fallower. Each time we wanted the robot to make a turn we used sonar to slow the robot down and then the when the robot hits the wall it will make the desired turn.
+
+### button
+
+The button is a digital sensor, this means that returns a value of 0 whenever it is not pressed and then when it is pressed it returns a value of 1. We used this type of sensor in order to detect when we have hit a wall. This is probablly our most esintial sensor.
+![picture](/img/button.png)
+
+### sonar
+
+This type of sensor was vital to the succesful operation of the button this is because the buttons return value of 1 would not register if the robot hit the wall at full speed.
+![picture](/img/sonar.pgn)
 
 
 ## Code <a id="code"></a>
