@@ -19,7 +19,10 @@ This is the Code running my VEX robot for the PLTW corse P.O.E. The robot has be
 
 ## Mechanical <a id="Mech"></a>
 
-## Sensors <a id="Sensors"></a>
+## Sensors <a id="Sensors"></a
+
+We used three different sensors on the robot including button, sonar, and line fallower. Each time we wanted the robot to make a turn we used sonar to slow the robot down and then the when the robot hits the wall it will make the desired turn.
+
 
 ## Code <a id="code"></a>
 
@@ -29,7 +32,7 @@ These are the different aspects found in the code that runs the robot.
 ### Motion Profiling-ish <a id="motionpfile"></a>
 
 We attempted to create a rough version of Motion Profiling. We used a sonar [Sensor](#Sensors) in order to slow the motors based on there distance from the wall. This worked extremly well and achived our ability to move faster through the corse while not hitting the wall so hard that the button sensor does not pick up the needed data. The code is very simple and looks like this
-```java
+```c
 task main {
   untilSonarLessThan(30,dgtl3);
 	startMotor(port2, 50);
@@ -40,7 +43,7 @@ task main {
 ### Pivot turn
 
 We first tried doing a point turn however after a few test runs we ran into some flaws in the predictability of where the robot would end up, because of this we decided to use Pivot Turn. This type of turn was more predictable and the code is simply
-```java
+```c
 task main {
   startMotor(port3, 55);
 }
