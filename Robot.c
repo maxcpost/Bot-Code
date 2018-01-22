@@ -27,51 +27,62 @@ task main()
 	wait(1);
 
 	//Move foward (speedOne)
-	startMotor(port2, 25);
-	startMotor(port3, 25);
-	wait(.5);
+	startMotor(port2, 50);
+	startMotor(port3, 50);
+	wait(.6);
 	//speedTwo
 	startMotor(port2, 75);
 	startMotor(port3, 75);
-	wait(.3);
+	wait(.5);
 	//speedThree
 	startMotor(port2, 150);
 	startMotor(port3, 150);
 
 	//Slow down (speedTwo)
-	untilSonarLessThan(40,dgtl3);
+	untilSonarLessThan(40, dgtl3);
 	startMotor(port2, 75);
 	startMotor(port3, 75);
 	//speedOne
-	untilSonarLessThan(20,dgtl3);
-	startMotor(port2, 25);
-	startMotor(port3, 25);
+	untilSonarLessThan(20, dgtl3);
+	startMotor(port2, 50);
+	startMotor(port3, 50);
 
 	//Move backwards
 	untilTouch(dgtl2);
-	wait(1);
+	startMotor(port2, 50);
+	startMotor(port3, 50);
+	untilSonarLessThan(30, dgtl3)
+	startMotor(port2, 0);
+	startMotor(port3, 0);
+	wait(.8);
 
 	//Turn
 	startMotor(port2, -55);
 	wait(5);
 
 	//Move foward(speedOne)
-	startMotor(port2, 25);
-	startMotor(port3, 25);
-	wait(.5);
+	startMotor(port2, 50);
+	startMotor(port3, 50);
+	wait(.6);
 	//speedTwo
 	startMotor(port2, 75);
 	startMotor(port3, 75);
-	wait(.3);
+	wait(.5);
 	//speedThree
 	startMotor(port2, 150);
 	startMotor(port3, 150);
+
 	//Slow down (speedTwo)
-	untilSonarLessThan(40,dgtl3);
+	untilSonarLessThan(40, dgtl3);
 	startMotor(port2, 75);
 	startMotor(port3, 75);
 	//speedOne
-	untilSonarLessThan(20,dgtl3);
-	startMotor(port2, 25);
-	startMotor(port3, 25);
+	untilSonarLessThan(20, dgtl3);
+	startMotor(port2, 50);
+	startMotor(port3, 50);
+
+	//STOP
+	untilTouch(dgtl2);
+	startMotor(port2, 0);
+	startMotor(port3, 0);
 }
